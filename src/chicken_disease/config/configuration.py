@@ -1,7 +1,8 @@
 from chicken_disease.constants import *
 from chicken_disease.utils.common import read_yaml , create_directories
+from pathlib import Path
 from chicken_disease.entity.config_entity import DataIngestionConfig , PrepareBaseModelConfig
-from chicken_disease.entity.config_entity import  PrepareCallbacksConfig
+from chicken_disease.entity.config_entity import  PrepareCallbacksConfig , TrainingConfig , EvaluationConfig
 import os
 PARAMS_FILE_PATH = Path("params.yaml")
 
@@ -59,3 +60,36 @@ class ConfigurationManager:
         )
 
         return prepare_callback_config
+    
+    def get_training_config(self) -> TrainingConfig:
+        training = self.config.training
+        prepare_base_model = self.config.prepare_base_model
+        params = self.params
+        training_data = os.path.join(self.config.data_ingestion.unzip_dir, "Chicken-fecal-images")
+        create_directories([
+            Path(training.root_dir)
+        ])
+
+        training_config = TrainingConfig(
+            root_dir=Path(training.root_dir),
+            trained_model_path=Path(training.trained_model_path),
+            updated_base_model_path=Path(prepare_base_model.updated_base_model_path),
+            training_data=Path(training_data),
+            params_epochs=params.EPOCHS,
+            params_batch_size=params.BATCH_SIZE,
+            params_is_augmentation=params.AUGMENTATION,
+            params_image_size=params.IMAGE_SIZE
+        )
+
+        return training_config
+
+
+    def get_validation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_of_model=Path("artifacts/training/model.h5"),
+            training_data=Path("artifacts/data_ingestion/Chicken-fecal-images"),
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+        )
+        return eval_config 
