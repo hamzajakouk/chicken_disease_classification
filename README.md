@@ -91,7 +91,7 @@ MLOps is a budding field that productionalize ML models. `ML/DL` being a core re
 
 The project is an end-to-end solution that focuses on predicting the health status of chickens based on fecal images. It encompasses various stages, including `data preprocessing`, image analysis, model training, and `deployment`. The fecal images are processed to extract relevant features and are used to train a deep learning model. The trained model is then `deployed` as part of a web application, which allows users to input fecal images and obtain predictions regarding the health status of the chickens. The project incorporates `CI/CD` pipelines for automated testing, releases, and continuous integration, ensuring efficient development and deployment processes.
 
-| ![flowchart](./images/flowchart.png) |
+| ![flowchart](./images/flowchart1.png) |
 |:--:|
 | <b>Figure 2: Project Workflow - Deployment with CI/CD</b>|
 
