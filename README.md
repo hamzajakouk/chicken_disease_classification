@@ -17,6 +17,22 @@ This project focuses on the prediction of chicken diseases using an `end-to-end 
 <a href="https://azure.microsoft.com/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/></a>
 <a href="https://th.bing.com/th/id/R.82986e112ecefabbcfbaf960e2c8fb36?rik=SfIPu6t13UB87Q&pid=ImgRaw&r=0" target="_blank" rel="noreferrer"><img src="https://th.bing.com/th/id/R.82986e112ecefabbcfbaf960e2c8fb36?rik=SfIPu6t13UB87Q&pid=ImgRaw&r=0" alt="dvc" width="40" height="40"/></a>
 </div>
+
+## Chicken Disease in Azure - Demo
+
+_**Link**: Will be updated. Please check the `Disclaimer` below the screenshot for more !!!_
+
+| ![input](./images/heroku_in.PNG) |
+|:--:|
+| <b>Figure 1a: App demo - Audio input to app for predicting keyword from trained model artifact</b>|
+
+| ![input](./images/heroku_out.PNG) |
+|:--:|
+| <b>Figure 1b: App demo - Predicted keyword with probability</b>|
+
+_**Disclaimer:**_ <br>
+_1. This app is just a demo and not for realtime usage. The main objective is to get ML models into production in terms of deployment and CI/CD, from MLOps paradigm_. <br>
+_2. Additionally, due to some technical issues in the Heroku backend, the app currently crashes, so the Heroku app link is not provided as of now. It will be updated once the issues are solved and when the app is up and running_.
   
 
 
