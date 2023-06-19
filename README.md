@@ -22,11 +22,11 @@ This project focuses on the prediction of chicken diseases using an `end-to-end 
 
 _**Link**: Will be updated. Please check the `Disclaimer` below the screenshot for more !!!_
 
-| ![input](./images/heroku_in.PNG) |
+| ![input](./images/app demo1.PNG) |
 |:--:|
 | <b>Figure 1a: App demo - Image input is provided to the application for predicting the health status of chickens using the trained model artifact.</b>|
 
-| ![input](./images/heroku_out.PNG) |
+| ![input](./images/app demo2.PNG) |
 |:--:|
 | <b>Figure 1b: App demo - The application outputs the predicted health status of the chickens.</b>|
 
@@ -75,5 +75,18 @@ _2. Additionally, due to some technical issues in the Heroku backend, the app cu
 │   └── chicken_disease_model.egg-info
 └── templates
 ```
+## Motivation
+
+`Deep learning/Machine learning` or `AI` (in short) is the current hot topic which has its application in most of the fields and it's demand is increasing day-by-day. But at this point, the sad truth is - `Only very less percentage of ML/DL models makes into production`. That's when `MLOps` comes into the picture. 
+
+The major challenges with ML during development are:
+  - Development, training and deployment environment can be different leading to dependency hassles.
+  - Whenever input data changes, its becomes more tedious to reproduce the experiment.
+  - Experiment tracking and analyzing can mostly be difficult and challenging.
+  - Core ML code turn out to be spaghetti jungle which introduces lot of `boilerplate` codes.
+
+MLOps is a budding field that productionalize ML models. `ML/DL` being a core research field, still misses out the `deployment` paradigm which includes design principles, patterns, testing, code styles etc. This restricts the domain to be used in the production environment efficiently. To nullify this, MLOps integrates DevOps principles into ML domain and serves as an intersection point of `Machine learning`, `Datascience` and `DevOps`.
+
+## Description
 
 
