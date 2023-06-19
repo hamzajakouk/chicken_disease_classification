@@ -22,7 +22,7 @@ This project focuses on the prediction of chicken diseases using an `end-to-end 
 
 _**Link**: Will be updated. Please check the `Disclaimer` below the screenshot for more !!!_
 
-| ![input](./images/App demo1.PNG) |
+| ![input](./images/flowchart.PNG) |
 |:--:|
 | <b>Figure 1a: App demo - Image input is provided to the application for predicting the health status of chickens using the trained model artifact.</b>|
 
