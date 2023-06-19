@@ -24,16 +24,56 @@ _**Link**: Will be updated. Please check the `Disclaimer` below the screenshot f
 
 | ![input](./images/heroku_in.PNG) |
 |:--:|
-| <b>Figure 1a: App demo - Audio input to app for predicting keyword from trained model artifact</b>|
+| <b>Figure 1a: App demo - Image input is provided to the application for predicting the health status of chickens using the trained model artifact.</b>|
 
 | ![input](./images/heroku_out.PNG) |
 |:--:|
-| <b>Figure 1b: App demo - Predicted keyword with probability</b>|
+| <b>Figure 1b: App demo - The application outputs the predicted health status of the chickens.</b>|
 
 _**Disclaimer:**_ <br>
 _1. This app is just a demo and not for realtime usage. The main objective is to get ML models into production in terms of deployment and CI/CD, from MLOps paradigm_. <br>
 _2. Additionally, due to some technical issues in the Heroku backend, the app currently crashes, so the Heroku app link is not provided as of now. It will be updated once the issues are solved and when the app is up and running_.
   
-
+## Directory structure
+```
+├── artifacts
+│   ├── data_ingestion
+│   │   └── Chicken-fecal-images
+│   │       ├── Coccidiosis
+│   │       └── Healthy
+│   ├── prepare_base_model
+│   ├── prepare_callbacks
+│   │   ├── checkpoint_dir
+│   │   └── tensorboard_log_dir
+│   │       ├── tb_logs_at_2023-06-16-13-56-16
+│   │       │   ├── train
+│   │       │   └── validation
+│   │       └── tb_logs_at_2023-06-16-14-39-13
+│   │           ├── train
+│   │           └── validation
+│   └── training
+├── config
+├── logs
+├── research
+├── src
+│   ├── chicken.egg-info
+│   ├── chicken_disease
+│   │   ├── __pycache__
+│   │   ├── components
+│   │   │   └── __pycache__
+│   │   ├── config
+│   │   │   └── __pycache__
+│   │   ├── constants
+│   │   │   └── __pycache__
+│   │   ├── entity
+│   │   │   └── __pycache__
+│   │   ├── pipeline
+│   │   │   └── __pycache__
+│   │   └── utils
+│   │       └── __pycache__
+│   ├── chicken_disease.egg-info
+│   └── chicken_disease_model.egg-info
+└── templates
+```
 
 
