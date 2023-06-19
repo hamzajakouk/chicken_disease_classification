@@ -32,7 +32,7 @@ _**Link**: Will be updated. Please check the `Disclaimer` below the screenshot f
 
 _**Disclaimer:**_ <br>
 _1. This app is just a demo and not for realtime usage. The main objective is to get ML models into production in terms of deployment and CI/CD, from MLOps paradigm_. <br>
-_2. Additionally, due to some technical issues in the Heroku backend, the app currently crashes, so the Heroku app link is not provided as of now. It will be updated once the issues are solved and when the app is up and running_.
+_2. Additionally, due to some technical issues in the Azure backend, the app currently crashes, so the app link is not provided as of now. It will be updated once the issues are solved and when the app is up and running_.
   
 ## Directory structure
 ```
@@ -89,4 +89,9 @@ MLOps is a budding field that productionalize ML models. `ML/DL` being a core re
 
 ## Description
 
+The project is an end-to-end solution that focuses on predicting the health status of chickens based on fecal images. It encompasses various stages, including `data preprocessing`, image analysis, model training, and `deployment`. The fecal images are processed to extract relevant features and are used to train a deep learning model. The trained model is then `deployed` as part of a web application, which allows users to input fecal images and obtain predictions regarding the health status of the chickens. The project incorporates `CI/CD` pipelines for automated testing, releases, and continuous integration, ensuring efficient development and deployment processes.
+
+| ![flowchart](./images/flowchart.png) |
+|:--:|
+| <b>Figure 2: Project Workflow - Deployment with CI/CD</b>|
 
