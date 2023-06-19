@@ -138,11 +138,11 @@ open up you local host and port
 
 
 
-# AWS-CICD-Deployment-with-Github-Actions
+## AWS-CICD-Deployment-with-Github-Actions
 
-## 1. Login to AWS console.
+### 1. Login to AWS console.
 
-## 2. Create IAM user for deployment
+### 2. Create IAM user for deployment
 
 	#with specific access
 
@@ -170,13 +170,13 @@ open up you local host and port
 	2. AmazonEC2FullAccess
 
 	
-## 3. Create ECR repo to store/save docker image
+### 3. Create ECR repo to store/save docker image
     - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/chicken
 
 	
-## 4. Create EC2 machine (Ubuntu) 
+### 4. Create EC2 machine (Ubuntu) 
 
-## 5. Open EC2 and Install docker in EC2 Machine:
+### 5. Open EC2 and Install docker in EC2 Machine:
 	
 	
 	#optinal
@@ -195,11 +195,11 @@ open up you local host and port
 
 	newgrp docker
 	
-# 6. Configure EC2 as self-hosted runner:
+### 6. Configure EC2 as self-hosted runner:
     setting>actions>runner>new self hosted runner> choose os> then run command one by one
 
 
-# 7. Setup github secrets:
+### 7. Setup github secrets:
 
     AWS_ACCESS_KEY_ID=
 
@@ -214,14 +214,14 @@ open up you local host and port
 
 
 
-# AZURE-CICD-Deployment-with-Github-Actions
+## AZURE-CICD-Deployment-with-Github-Actions
 
-## Save pass:
+### Save pass:
 
 s3cEZKH5yytiVnJ3h+eI3qhhzf9q1vNwEi6+q+WGdd+ACRCZ7JD6
 
 
-## Run from terminal:
+### Run from terminal:
 
 docker build -t chickenapp.azurecr.io/chicken:latest .
 
@@ -230,7 +230,7 @@ docker login chickenapp.azurecr.io
 docker push chickenapp.azurecr.io/chicken:latest
 
 
-## Deployment Steps:
+### Deployment Steps:
 
 1. Build the Docker image of the Source Code
 2. Push the Docker image to Container Registry
