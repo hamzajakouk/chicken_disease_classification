@@ -101,7 +101,7 @@ The project is an end-to-end solution that focuses on predicting the health stat
 Clone the repository
 
 ```bash
-https://github.com/entbappy/Chicken-Disease-Classification--Project
+https://github.com/hamzajakouk/chicken_disease_classification.git
 ```
 ### STEP 01- Create a conda environment after opening the repository
 
